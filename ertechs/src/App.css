@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+body {
+  font-family: "Gruppo", sans-serif;
+  color: white;
+  background: #000;
+  text-align: justify;
+}
+
+/* -----------------------------------------------Cards----------------------------------------------- */
+
+.cards {
+  background-image: url('./assets/Backgroundimg4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cards .content {
+  background-color: rgba(15, 14, 14, 0.719);
+  border: 1px solid rgba(255, 238, 5, 0.493);
+  -webkit-backdrop-filter: blur(20px);
+  margin: 12px;
+  width: 22rem;
+}
+
+.cards .card {
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: .7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover>.card:not(:hover) {
+  filter: blur(1.5rem);
+  transform: scale(0.9, 0.9);
+}
+
+.card button {
+  background: #000;
+}
+
+@media only screen and (max-width: 990px) {
+
+  .carousel {
+    display: none !important;
+  }
+
+  .main {
+    width: 100vw !important;
+  }
+
+  .main h1 {
+    margin-top: 10px !important;
+  }
+
+  .cards {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .cards .sub_cards1 {
+    margin: 0 0 !important;
+  }
+
+  .cards .sub_cards1,
+  .cards .sub_cards2 {
+    flex-direction: column;
+  }
+
+  .cards .content {
+    margin: 12px;
+    width: auto;
+  }
+
+  .cards .content .tip {
+    font-size: 28px !important;
+    margin-bottom: 0;
+  }
+
+  .cards .content p {
+    font-size: medium !important;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about p {
+    margin: 0 -5px !important;
+    text-align: justify !important;
+    font-weight: normal !important;
+  }
+
+  .whoweare {
+    flex-direction: column;
+  }
+
+  .whoweare p {
+    margin: 0 -2em !important;
+    text-align: justify !important;
+    font-weight: normal !important;
+  }
+
+  .whatwedo {
+    flex-direction: column-reverse;
+  }
+  .whatwedo .what_cards h5 {
+   text-align: center !important;
+   font-size: 1.8rem !important;
+  }
+  .whatwedo .what_cards p {
+    margin: 0 -2em !important;
+    text-align: justify !important;
+    font-weight: normal !important;
+  }
+
+  .Whychooseus {
+    flex-direction: column;
+  }
+
+  .Whychooseus p {
+    margin: 0 8px !important;
+    text-align: justify !important;
+    font-weight: normal !important;
+  }
+
+  .Whychooseus h5 {
+    text-align: center !important;
+    font-size: 1.8rem !important;
+  }
+.contact{
+ margin: 0 !important;
+ padding: 0 !important;
+ width: 100vw !important;
+ gap: 0 !important;
+ flex-direction: column;
+}
+  * img {
+   margin: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 300px;
+  }
+}
