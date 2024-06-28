@@ -7,6 +7,29 @@ body {
   text-align: justify;
 }
 
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item img {
+  filter: blur(1px);
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* -----------------------------------------------Cards----------------------------------------------- */
 
 .cards {
@@ -54,12 +77,50 @@ body {
 
 @media only screen and (max-width: 990px) {
 
-  .carousel {
-    display: none !important;
+  .main .content {
+    width: 100vw !important;
+  }
+
+  .carousel-item img {
+    filter: blur(0px);
+  }
+
+  .carousel-caption {
+    width: 90%;
+    height: 75%;
+  }
+
+  .carousel-caption p {
+    font-size: 15px !important;
+  }
+
+  .casestudy {
+    width: 100% !important;
+    flex-direction: column;
+  }
+
+  .casestudy .card {
+    height: 14em !important;
+  }
+
+  .Servive_solution {
+    width: 100% !important;
+    flex-direction: column;
+  }
+
+  .Servive_solution .card img {
+    width: 250px !important;
+  }
+
+  .card-body p {
+    font-weight: normal !important;
+    font-size: 18px !important;
+    line-height: 1.3em;
   }
 
   .main {
-    width: 100vw !important;
+    width: 100% !important;
+    flex-direction: column-reverse;
   }
 
   .main h1 {
@@ -120,10 +181,12 @@ body {
   .whatwedo {
     flex-direction: column-reverse;
   }
+
   .whatwedo .what_cards h5 {
-   text-align: center !important;
-   font-size: 1.8rem !important;
+    text-align: center !important;
+    font-size: 1.8rem !important;
   }
+
   .whatwedo .what_cards p {
     margin: 0 -2em !important;
     text-align: justify !important;
@@ -144,15 +207,17 @@ body {
     text-align: center !important;
     font-size: 1.8rem !important;
   }
-.contact{
- margin: 0 !important;
- padding: 0 !important;
- width: 100vw !important;
- gap: 0 !important;
- flex-direction: column;
-}
+
+  .contact {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw !important;
+    gap: 0 !important;
+    flex-direction: column;
+  }
+
   * img {
-   margin: 10px;
+    margin: 10px;
     margin: auto;
     display: flex;
     align-items: center;
